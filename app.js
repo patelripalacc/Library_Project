@@ -17,10 +17,6 @@ class Library {
   constructor() {
     this.bookCount = 1;
     this.books = [];
-
-    // this.markRead = this.markRead.bind(this);
-    // this.addBook = this.addBook.bind(this);
-    // this.removeBook = this.removeBook.bind(this);
   }
   //create markRead method
   markRead(checkbox) {
@@ -32,7 +28,7 @@ class Library {
       }
     }
   }
-  //create AddBook method that add new book to DOM bu user.
+  //create AddBook method that add new book to DOM.
   addBook() {
     //selecting user input to add to new book list
     let title = document.getElementById("titleInput").value;
@@ -43,7 +39,7 @@ class Library {
     //push newBook books library.
     this.books.push(newBook);
 
-    //creating new element on DOM that can assign new book input by user.
+    //creating new element on DOM that can assign new book.
     let newTr = document.createElement("tr");
 
     let newTitle = document.createElement("td");
@@ -80,12 +76,12 @@ class Library {
     ckBox1.addEventListener("click", () => {
       this.removeBook(newBook.id);
     });
-    //resetting value to input after user add book
+    //resetting value to input after adding a book.
     document.getElementById("titleInput").value = "";
     document.getElementById("authorInput").value = "";
     document.getElementById("readCheckbox").checked = false;
   }
-  //create removeBook method to remove book from DOM by user.
+  //create removeBook method to remove book from DOM.
   removeBook(book) {
     this.books = this.books.filter(({ id }) => book !== id);
 
