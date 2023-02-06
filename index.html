@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Library Project</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
   </head>
-  <body>
+  <body id="container">
     <main
       style="
         display: flex;
@@ -15,54 +17,52 @@
       "
     >
       <div>
-        <h1>Library Project</h1>
-        <form action="" id="form">
-          <div class="form-group">
-            <label for="title">Title</label>
-            <input type="text" name="title" id="title" />
+        <h1 class="h1">Library Project</h1>
+        <div>
+          <div class="input">
+            <div>
+              <label for="titleInput">Title:</label>
+              <input
+                type="text"
+                name="title"
+                id="titleInput"
+                placeholder="Book Title"
+              />
+            </div>
+            <div>
+              <label for="authorInput">Author:</label>
+              <input
+                type="text"
+                name="author"
+                id="authorInput"
+                placeholder="Author Name"
+              />
+            </div>
           </div>
-          <div class="form-group">
-            <label for="author">Author</label>
-            <input type="text" name="author" id="author" />
+          <div class="ckbox">
+            <div>
+              <label for="readCheckbox">Read</label>
+              <input type="checkbox" name="read" id="readCheckbox" />
+            </div>
+            <button id="addButton">Add Book</button>
           </div>
-          <div class="form-group">
-            <label for="read">Read</label>
-            <input type="checkbox" name="read" id="read" />
-          </div>
-          <div class="form-group">
-            <button type="submit" id="submitBtn">Add Book</button>
-          </div>
-        </form>
-        <hr />
+        </div>
         <div id="library">
-          <!-- Add table here -->
-          <table id="table" style="min-width: 680px; margin: 2rem">
-            <thead>
-              <tr>
+          <table id="table">
+            <thead class="title">
+              <tr class="header">
                 <th>Title</th>
                 <th>Author</th>
                 <th>Read</th>
+                <th>Remove</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>Name of the Wind</td>
-                <td>Patrick Rothfuss</td>
-                <td>
-                  <input
-                    type="checkbox"
-                    name="read"
-                    id="readLibraryCheckbox"
-                    checked
-                    disabled
-                  />
-                </td>
-              </tr>
+            <tbody id="tableBody">
+              <!--Add books here-->
             </tbody>
           </table>
         </div>
       </div>
     </main>
-    <script src="app.js"></script>
   </body>
 </html>

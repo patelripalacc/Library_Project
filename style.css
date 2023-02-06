@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(
+    to bottom,
+    #f4f0f0,
+    rgb(251, 232, 193),
+    rgb(196, 243, 179),
+    rgb(158, 244, 241),
+    rgb(208, 174, 242)
+  );
+  height: 100vh;
+  width: 100;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 40px;
+}
+.h1 {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+.input {
+  font-size: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.ckbox {
+  font-size: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+.input input {
+  height: 30px;
+  width: auto;
+  font-size: 15px;
+}
+.input button {
+  font-size: 20px;
+  color: rgb(52, 46, 64);
+  margin-bottom: 10px;
+}
+.title > tr {
+  font-size: 25px;
+}
+#table {
+  margin: 2rem;
+  min-width: 680px;
+}
+#tableBody {
+  font-size: 20px;
+}
+input#authorInput {
+  font-size: smaller;
+}
+input#titleInput {
+  font-size: smaller;
+}
+#addButton {
+  background-color: #6b565e;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+#addButton:hover,
+#addButton:focus {
+  background-color: #090506;
+}
+::-webkit-input-placeholder {
+  text-align: center;
+  font-size: medium;
+}
+#tableBody {
+  font-size: 22px;
+}
