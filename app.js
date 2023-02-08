@@ -84,7 +84,6 @@ class Library {
   //create removeBook method to remove book from DOM.
   removeBook(book) {
     this.books = this.books.filter(({ id }) => book !== id);
-
     const tbody = document.getElementById("tableBody");
     tbody.removeChild(document.getElementsByClassName(book)[0]);
   }
